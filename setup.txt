@@ -1,0 +1,27 @@
+OS: Ubuntu 14.04
+
+
+step1: you need install torch7.
+       
+       I fail with the offical guide.(http://torch.ch/docs/getting-started.html#)
+       
+       You can clean old vision with command.
+       
+       curl -s https://raw.github.com/torch/ezinstall/master/clean-old.sh | bash  
+       
+       then you can install torch7.
+       
+       curl -s https://raw.githubusercontent.com/torch/ezinstall/master/install-all | bash
+       
+       you can check with commmand.
+       
+       luajit -ltorch  
+       
+step2: you need install load-caffe.
+       sudo apt-get install libprotobuf-dev protobuf-compiler
+       
+step3: Update the image packge to the latest version: luarocks install image
+       Update nn package to the latest version: luarocks install nn
+
+      
+       
